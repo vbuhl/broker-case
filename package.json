@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/vbuhl/broker-case#readme",
   "dependencies": {
-    "angular": "^1.4.6"
+    "angular": "^1.4.6",
+    "bootstrap": "^3.3.5",
+    "jquery": "^2.1.4"
   }
 }
