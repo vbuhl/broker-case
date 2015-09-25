@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <title>Broken Record</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body ng-controller="homeController">
+<h1>broker case</h1>
 <div class="container">
+    {{products}}
     <div ng-repeat="product in products">
-        <div>{{product.name}}</div>
+        <div>{{product.artist}}</div>
     </div>
 </div>
 
@@ -17,8 +20,10 @@
 <script src="js/app.js"></script>
 
 <script src="js/homecontroller.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
