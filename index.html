@@ -2,19 +2,61 @@
 <html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
-    <title>Broken Record</title>
+    <title>FitView</title>
     <!-- Latest compiled and minified CSS -->
    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body ng-controller="homeController">
-<h1>broker case</h1>
+
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">FITVIEW</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Trainings <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+</nav>
+
+
 <div class="container">
-    {{products}}
-    <div ng-repeat="product in products">
-        <div>{{product.artist}}</div>
-    </div>
-</div>
+
+
+    <h1>FITVIEW</h1>
+
+    <div class="row">
+        <div ng-repeat="training in trainings">
+
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <img ng-src="{{training.image-name}}" class="img-responsive"/>
+            <p>{{training.type}}</p>
+            <time>{{training.datetime}}</time>
+            <p>{{training.duration}}</p>
+            <p>{{training.comment}}</p>
+            </div>
+        </div>
+    </div><!--row-->
+</div><!--container-->
 
 <script src="node_modules/angular/angular.min.js"/>
 <script src="js/app.js"></script>

@@ -4,25 +4,25 @@
 (function () {
     var app = angular.module("app",[]);
     app.controller("homeController", homeController);
-    app.factory("productService", productService);
+    app.factory("trainingService", trainingService);
 
-    function homeController($scope, productService) {
+    function homeController($scope, trainingService) {
 
-        productService.getProducts().then(function(data){
-            $scope.products = data;
+        trainingService.getTrainings().then(function(data){
+            $scope.trainings = data;
         });
     }
 
-    function productService($http){
-        var getProducts = function(){
-            return $http.get("JSON/products.json")
+    function trainingService($http){
+        var getTrainings = function(){
+            return $http.get("data/trainings.json")
                 .then(function(response){
                     return response.data;
                 });
         };
 
         return {
-            getProducts: getProducts
+            getTrainings: getTrainings
         };
     }
 })();

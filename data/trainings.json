@@ -1,0 +1,30 @@
+[
+  {
+    "type": "weight lifting",
+    "datetime": "2015-10-02T16:05:10",
+    "duration": "2:10:00",
+    "imageUrl":"images/weights.jpg",
+    "comment":"almost didn't make it!"
+  },
+  {
+    "type": "crossfit",
+    "datetime": "2015-10-04T12:05:10",
+    "duration": "1:05:00",
+    "imageUrl":"images/cross.jpg",
+    "comment":"very nice training!"
+  },
+  {
+    "type": "running",
+    "datetime": "2015-09-02T11:25:04",
+    "duration": "0:24:43",
+    "imageUrl":"images/run.jpg",
+    "comment":"yeah new PR!"
+  },
+  {
+    "type": "weight lifting",
+    "datetime": "2015-10-07T08:16:11",
+    "duration": "2:00:00",
+    "imageUrl":"images/weights.jpg",
+    "comment":"great training!"
+  }
+]
